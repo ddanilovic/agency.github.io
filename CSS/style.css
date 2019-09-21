@@ -1,0 +1,459 @@
+/* Universal CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: #DB5461;
+}
+
+/* Main CSS */
+
+body {
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source sans pro', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Links CSS */
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Main Header CSS */
+
+.main-header {
+  display: flex;
+}
+
+.main-header img {
+  max-width: 7.5rem;
+  position: absolute;
+  width: 90%;
+  z-index: 3;
+}
+
+.main-header ul {
+  background-color: #fff;
+  display: none;
+  font-weight: 600;
+  height: 700px;
+  left: 0;
+  list-style: none;
+  padding: 2em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  width: 60%;
+  z-index: 5;
+}
+
+.main-header li {
+  padding: 2rem 0;
+}
+
+.header-1, .header-2 {
+  flex-grow: 1;
+  height: 43.75rem;
+  padding: 4em 2em;
+}
+
+.header-1 {
+  background-color: #DB5461;
+  flex-basis: 40%;
+}
+
+.header-1::after {
+  background-color: #DB5461;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 100%;
+  height: 43.75rem;
+  transform-origin: 100% 0;
+  transform: skew(10deg);
+  z-index: 1;
+}
+
+.header-1 h2 {
+  color: #fff;
+  left: 2rem;
+  position: absolute;
+  top: 20rem;
+  z-index: 3;
+}
+
+.header-1 span {
+  color: #000;
+}
+
+.header-call-to-action {
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 1.5625rem;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 600;
+  left: 2rem;
+  margin-top: 2em;
+  padding: .5rem 1.5rem;
+  position: absolute;
+  text-transform: uppercase;
+  transition: margin .3s;
+  top: 26.25rem;
+  z-index: 3;
+}
+
+.header-call-to-action:hover {
+  margin-top: 1.5em;
+  transition: margin .3s;
+}
+
+.header-2 {
+  background: #DB5461 url('../images/background_header.jpg') no-repeat left;
+  background-size: cover;
+  flex-basis: 60%;
+}
+
+.header-2 i {
+  color: #DB5461;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  top: 4rem;
+}
+
+/* Bar CSS */
+
+.bar {
+  background-color: #30343F;
+  padding: 2em;
+}
+
+.bar-item {
+  color: #fff;
+  display: flex;
+}
+
+.bar-item:nth-child(2) {
+  margin: 2em auto;
+}
+
+.bar-item img {
+  height: 2.5rem;
+  margin-right: 1rem;
+  width: 2.5rem;
+}
+
+.bar-item p:nth-child(1) {
+  font-weight: 600;
+}
+
+.bar-item p:nth-child(2) {
+  color: #aaa;
+}
+
+/* Pricing CSS */
+
+.pricing-container {
+  text-align: center;
+}
+
+.pricing-container h2 {
+  margin: 2rem 0 0;
+}
+
+.pricing-container hr {
+  background-color: #30343F;
+  height: 3px;
+  margin: 1em auto;
+  width: 3.125rem;
+}
+
+.pricing-item {
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, .2);
+  margin: 1em auto;
+  transition: transform .5s;
+  width: 90%;
+}
+
+.pricing-item:hover {
+  transform: scale(1.05);
+  transition: transform .5s;
+}
+
+.pricing-item h3, .pricing-item p, .pricing-item button {
+  padding: .5rem;
+}
+
+.pricing-item h3 {
+  background-color: #30343F;
+  color: #fff;
+}
+
+.pricing-item:nth-child(2) h3 {
+  background-color: #DB5461;
+  border: 4px solid #DB5461;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.pricing-item p {
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.pricing-item button {
+  background: none;
+  border: 1px solid #DB5461;
+  border-radius: 5px;
+  color: #DB5461;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: background-color .3s, color .3s;
+  width: 80%;
+}
+
+.pricing-item button:hover {
+  background-color: #DB5461;
+  color: #fff;
+  transition: background-color .3s, color .3s;
+}
+
+/* Footer CSS */
+
+.main-footer {
+  background-color: #30343F;
+  padding: 4em 1em;
+  text-align: center;
+}
+
+.main-footer h2, .main-footer h3 {
+  color: #fff;
+}
+
+.main-footer hr {
+  background-color: #DB5461;
+  border: none;
+  height: 3px;
+  margin: 1em auto;
+  width: 3.125rem;
+}
+
+.main-footer p {
+  color: #aaa;
+}
+
+.main-footer a {
+  color: #DB5461;
+  transition: margin-left .5s;
+}
+
+.main-footer a:hover {
+  margin-left: 0.625rem;
+  transition: margin-left .5s;
+}
+
+.main-footer-item {
+  margin: 2em 0;
+  padding: 1em;
+  transition: background-color 1s;
+}
+
+.main-footer-item:hover {
+  background-color: #292C36;
+  transition: background-color 1s;
+}
+
+.main-footer-item h3 {
+  margin: .5em 0;
+}
+
+.main-footer-item i {
+  color: #DB5461;
+  margin-left: 5px;
+}
+
+.footer-end-top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-end-top i {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 .2rem;
+}
+
+.footer-phone-number {
+  margin-right: auto;
+}
+
+.footer-end hr {
+  background-color: #aaa;
+  width: 100%;
+}
+
+/* Animations CSS */
+
+.fade-in {
+  animation: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+ 
+.fade-in-left {
+  animation-name: fade-in-left;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+.short-animation {
+  animation-duration: 500ms;
+}
+
+.delay-1 {
+  animation-delay: 400ms;
+}
+
+.delay-2 {
+  animation-delay: 800ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Header CSS */
+  .header-1 {
+    padding: 4em 3em;
+  }
+  .header-1 img {
+    left: 4em;
+    max-width: 9.375rem;
+  }
+  .header-1 h2 {
+    font-size: 2rem;
+    left: 2em;
+    top: 18.75rem;
+  }
+  .removed-br {
+    display: none;
+  }
+  .header-call-to-action {
+    font-size: 1.2rem;
+    left: 3.5rem;
+  }
+  .header-2 i {
+    display: none;
+  }
+  .header-2 ul {
+    align-content: center;
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    left: auto;
+    max-width: 21.875rem;
+    opacity: 1;
+    right: 2em;
+    top: 4em;
+    width: 60%;
+  }
+  .header-2 li {
+    margin: -.8em .5em 0;
+    padding: 0;
+  }
+  /* Bar CSS */
+  .bar-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .bar-item:nth-child(2) {
+    margin: 0;
+  }
+  /* Main Footer CSS */
+  .main-footer {
+    padding: 4rem 4rem;
+  }
+  .main-footer-item {
+    padding: 3em 1em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* Pricing CSS */
+  .pricing-container {
+    padding: 2em;
+  }
+  .pricing-item-container {
+    display: flex;
+  }
+  .pricing-item {
+    margin: 0 2em;
+  }
+  .pricing-item:nth-child(1), .pricing-item:nth-child(3) {
+    margin-top: 1em;
+  }
+  /* Main Footer CSS */
+  .main-footer-items-container {
+    display: flex;
+  }
+  .main-footer {
+    text-align: left;
+  }
+  .main-footer h2 {
+    text-align: center;
+  }
+}
